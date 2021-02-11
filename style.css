@@ -213,10 +213,15 @@ nav {
 }
 
 #timer{
-    height: 200px;
-    width: 100%;
+    position: absolute;
+    height: 120px;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
     background-position: center;
     background-image: url("./images/orangesmall.png");
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,46 +253,30 @@ nav {
 #descriptionsection{
     min-height: 500px;
     width: 100%;
+    /* margin-top: 100px; */
     /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#descriptionblock{
-    height: 70%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: red; */
+    /* justify-content: space-between; */
+    padding: 100px 100px;
 }
 
-#descriptionheader{
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-#descriptionheader h2{
-    color: #E85426;
+#descriptionsection h2{
+    color: #3C3C3E;
     text-align: center;
 }
 
-#descriptionheader p{
-    text-align: center;
-    margin-top: 20px;
+#descriptionsection h4{
+    color: #747474;
     font-size: 15px;
-    font-weight: 400;
-    color: #909090;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
 }
-
 #descriptionbody{
-    width: 60%;
-    /* height: 300px; */
+    width: 100%;
+    min-height: 300px;
     /* background-color: red; */
     margin-top: 50px;
     display: flex;
@@ -296,74 +285,89 @@ nav {
 }
 
 .dpblock{
-    width: 250px !important;
-    height: 200px;
+    width: 310px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    /* background-color: rgb(173, 127, 127); */
+    border-radius: 12px;
 }
 
 .dpicon{
     height: 150px;
     width: 150px;
-    background-color: rgb(255, 82, 82);
+    /* background-color: rgb(255, 82, 82); */
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.dpblock h3{
+.dpicon img{
+    height: 60px;
+    width: 60px;
+}
+
+.dpblock h6{
+    font-size: 13px;
     text-align: center;
+    margin-top: 20px;
     font-weight: 600;
-    font-size: 15px;
-    color: #3C3C3E;
+    color: #909090;
 }
 
-.dpblock:nth-child(1) .dpicon{
-    background-color: rgb(255, 174, 108);
+.dpblock:nth-child(1){
+    /* background-color: rgb(255, 174, 108); */
+    box-shadow: 0px 10px 13px -3px rgba(255,153,52,0.56);
 }
 
-.dpblock:nth-child(2) .dpicon{
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 10px 12px -4px rgba(156,156,156,0.42);
+.dpblock:nth-child(2){
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 0px 10px 13px -3px rgba(0,0,128,0.21);
 }
 
-.dpblock:nth-child(3) .dpicon{
-    background-color: rgb(155, 228, 133);
+.dpblock:nth-child(3){
+    /* background-color: rgb(155, 228, 133); */
+    box-shadow: 0px 10px 13px -3px rgba(19,135,8,0.51);
+
 }
 
 #vendors{
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    padding: 100px 100px;
     min-height: 400px;
     width: 100%;
-    /* background-color: red; */
+    background-color: #FDFBFF;
+    background-image: url("./images/whitebackground.png");
     display: flex;
+    background-size: cover;
+    background-position: center;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 }
 
 #vendors h2{
-  color: #E85426;  
+  color: #3C3C3E;
+  text-align: center;  
 }
 
-#vendors p{
+#vendors h4{
     text-align: center;
     margin-top: 20px;
     font-size: 15px;
-    font-weight: 400;
-    color: #909090;
-    width: 400px;
+    font-weight: 500;
+    color: #747474;
+    /* width: 400px; */
 }
 
 #vendorlist{
     margin-top: 70px;
     width: 100%;
     /* min-height: 400px; */
-    padding: 0 100px 0 100px;
+    /* padding: 0 100px 0 100px; */
     /* background-color: whitesmoke; */
     display: flex;
     align-items: center;
@@ -375,54 +379,73 @@ nav {
 }
 
 .vendors{
-    height: 310px;
+    height: 400px;
     width: 310px;
     overflow: hidden;
     border-radius: 5px;
-    background-color: red;
+    background-color: white;
     box-shadow: 0px 10px 12px -4px rgba(156,156,156,0.42);
-    background-image: url("https://images.unsplash.com/photo-1570441262582-a2d4b9a916a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=731&q=80");
+    /* padding: 0px 20px; */
+    /* background-image: url("https://images.unsplash.com/photo-1570441262582-a2d4b9a916a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=731&q=80"); */
 }
 
 .vendors:hover{    
     box-shadow: 0px 12px 15px -2px rgba(156, 156, 156, 0.596);
 }
 
-
-.overlay{
-    display: flex;
-    height: 100%;
+.vendortext{
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.486));;
-    /* margin-top: 30px; */
-    /* margin-bottom: 0; */
-    /* align-self: baseline; */
-    align-items: flex-end;
-    background-color: rgba(0, 0, 0, 0.411);
+    height: auto;
+    padding: 20px 20px;
+    color: #3C3C3E;
 }
 
-.overlay h3{
-    color: white;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
+.vendortext h6{
+    margin-top: 10px;
     font-weight: 500;
+    color: #747474;
 }
+
+.vendorimage{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.vendorimage img{
+    height: 250px;
+    width: auto;
+}
+
+
+
+
 
 #supported{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     width: 100%;
     min-height: 500px;
-    padding: 0 100px 0 100px;
+    padding: 100px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: space-around; */
 }
 
+#supported h2{
+    color: #3C3C3E;
+}
+
+#supported h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #747474;
+}
+
 .supportlogos{
-    margin-top: 50px;
+    margin-top: 70px;
     width: 75%;
     height: 100px;
     display: flex;
@@ -461,13 +484,12 @@ nav {
     font-size: 24px;
 }
 
-#events p{
+#events h4{
     text-align: center;
     margin-top: 20px;
     font-size: 15px;
-    font-weight: 400;
-    color: #909090;
-    width: 400px;
+    font-weight: 500;
+    color: #747474;
 }
 
 #eventcontent{
@@ -591,27 +613,23 @@ nav {
         font-size: 13px;
         width: 80%;
     }
-    #descriptionheader{
-        width: 100%;
-    }
+
     #descriptionsection{
-        margin-top: 70px;
-        
-        /* background-color: rgb(155, 228, 133); */
-    }
-    #descriptionsection p{
-        width: 280px;
-        font-size: 13px;
+        padding: 100px 30px;
     }
     #descriptionbody{
         flex-direction: column;
         margin-top: 30px;
     }
     .dpblock{
+        width: 280px;
         margin-bottom: 30px;
     }
     .dpblock h3{
         margin-top: 10px;
+    }
+    #vendors{
+        padding: 100px 30px;
     }
     #vendors p{
         width: 280px;
@@ -619,23 +637,25 @@ nav {
     }
     #vendorlist{
         margin-top: 30px;
-        width: 100%;
+        width: 70%;
+        padding: 0 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         /* min-height: 700px; */
     }
+
    
     .vendors{
         margin-top: 30px;
+        width: 280px;
         /* margin-bottom: 100px; */
     }
     #supported{
-        margin-top: 70px;
+        /* margin-top: 70px; */
+        padding: 70px 30px;
     }
-    #supported h2{
-        margin-bottom: 30px;
-    }
+
     .supportlogos{
         width: 100%;
         flex-direction: column;
@@ -677,5 +697,16 @@ nav {
     #fioverlay p{
         width: 280px;
         font-size: 13px;
+    }
+    #timer{
+        width: 80%;
+    }
+    #timer h3{
+        font-size: 15px;
+        height: 40px;
+        width: 40px;
+    }
+    #timer h3:nth-child(4){
+        margin-right: 0px;
     }
 }
