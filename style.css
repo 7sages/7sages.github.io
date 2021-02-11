@@ -370,6 +370,10 @@ nav {
     justify-content: space-between;
 }
 
+#vendorlist a{
+    text-decoration: none;
+}
+
 .vendors{
     height: 310px;
     width: 310px;
@@ -621,6 +625,7 @@ nav {
         justify-content: center;
         /* min-height: 700px; */
     }
+   
     .vendors{
         margin-top: 30px;
         /* margin-bottom: 100px; */
